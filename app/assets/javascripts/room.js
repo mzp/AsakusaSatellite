@@ -87,6 +87,8 @@ $(function() {
               'message' : $('textarea#message').val()
           });
           $('textarea#message').val('');
+      } else if (e.target == $('textarea#message').get(0)) {
+          this.submit();
       }
     });
 
